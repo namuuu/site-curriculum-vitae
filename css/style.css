@@ -14,9 +14,10 @@ body {
 .static-background {
     display: block;
     background-image: url("https://neovia.studio/wp-content/uploads/2021/04/NeoviaHome2.webp");
-    background-position: center bottom;
+    background-position: center top;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-size: 100%;
     height: 55vh;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
     margin-bottom: 115px;
@@ -57,7 +58,7 @@ body {
 }
 
 .who-am-i {
-    padding: 60px 150px;
+    padding: 60px 3vw;
 }
 
 .who-am-i h2 {
@@ -69,6 +70,7 @@ body {
 .progress-bars {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     align-items: center;
     padding: 100px 50px;
     margin: 50px 20px;
@@ -120,17 +122,29 @@ body {
     width: 30px; 
     height: 30px; 
 }
+#java:hover h2::after {
+    content: '(90%)';
+}
 #html::before {
     width: 70px; 
     height: 70px; 
+}
+#html:hover h2::after {
+    content: '(65%)';
 }
 #js::before {
     width: 120px; 
     height: 120px; 
 }
+#js:hover h2::after {
+    content: '(55%)';
+}
 #csharp::before {
     width: 120px; 
     height: 120px; 
+}
+#csharp:hover h2::after {
+    content: '(55%)';
 }
 
 .projects {
@@ -144,7 +158,7 @@ body {
 }
 
 .inspirations {
-    margin: 50px 5vh;
+    margin: 50px 5vw;
     border: #595959 1px solid;
     border-radius: 5px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
@@ -153,7 +167,7 @@ body {
 .inspirations > div {
     display: flex;
     justify-content: space-around;
-    margin: 0 25vh 50px 25vh;
+    margin: 0 10vw 50px 10vw;
 }
 
 .inspirations p {
@@ -167,9 +181,10 @@ body {
     color: #fff;
     text-align: center;
     background-image: url("https://neovia.studio/wp-content/uploads/2021/04/NeoviaHome2.webp");
-    background-position: center center;
+    background-position: center bottom;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-size: 100%;
     padding: 5vh 0 5vh 0;
 }
 
