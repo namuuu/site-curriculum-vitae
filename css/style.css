@@ -67,6 +67,32 @@ body {
     padding-bottom: 30px;
 }
 
+.navibar {
+    display: inline-block;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 1vh 0 1vh 5vh;
+    background-color: #afafaf9d;
+    z-index: 1;
+    top: 0;
+    position: sticky;
+    position: -webkit-sticky;
+}
+
+.navibar li {
+    float: left;
+}
+
+.navibar a {
+    display: block;
+    padding: 1vh 3vw;
+    text-decoration: none;
+    font-family: 'Montserrat', serif;
+    color: black;
+    border-right: 1px solid grey;
+}
+
 .progress-bars {
     display: flex;
     justify-content: space-around;
@@ -79,72 +105,22 @@ body {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
 }
 
+.progress-bars > span {
+    font-size: 4vh;
+}
+
 .progress-bars > h2 {
+    text-align: center;
     font-family: 'Montserrat', serif;    
+    padding-bottom: 3vh;
 }
 
-.progress-bars-item { 
-    margin: auto;
-    background: #fff; 
-    width: 120px; 
-    height: 120px; 
-    transform: rotate(45deg); 
-    position: relative;
+.progress-bars {
+    display: block;
 }
 
-.progress-bars-item h2 { 
-    line-height: 120px; 
-    text-align: center; 
-    transform: rotate(-45deg);
-}
-
-.progress-bars-item:before{
-    position: absolute;
-     content: "";
-    border: solid 5px #595959; 
-    border-width: 5px 0px 0px 5px; 
-    
-    top: -9px; left: -9px; bottom: -9px; right: -9px; 
-    z-index: 10;
-}
-
-.progress-bars-item:after{
-    position: absolute; 
-    content: ""; 
-    border: solid 5px #ef792b; 
-    border-width: 5px 5px 5px 5px; 
-    width: 140px; 
-    height: 140px; 
-    top: -9px; left: -9px; bottom: -9px; right: -9px;
-}
-
-#java::before {
-    width: 30px; 
-    height: 30px; 
-}
-#java:hover h2::after {
-    content: '(90%)';
-}
-#html::before {
-    width: 70px; 
-    height: 70px; 
-}
-#html:hover h2::after {
-    content: '(65%)';
-}
-#js::before {
-    width: 120px; 
-    height: 120px; 
-}
-#js:hover h2::after {
-    content: '(55%)';
-}
-#csharp::before {
-    width: 120px; 
-    height: 120px; 
-}
-#csharp:hover h2::after {
-    content: '(55%)';
+.progress {
+    margin-bottom: 3vh;
 }
 
 .projects {
