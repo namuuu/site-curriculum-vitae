@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: salmon;
+}
+
+
+.static-background {
+    display: block;
+    background-color: black;
+    background-image: url("https://neovia.studio/wp-content/uploads/2021/04/NeoviaHome2.webp");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    height: 30vh;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.static-background h1 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    line-height: 25vh;
+    font-family: 'Montserrat', serif;
+    text-shadow: 5px;
+    color: white;
+    font-size: xx-large;
+    font-weight: normal;
+}
+
+.navibar {
+    display: inline-block;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 1vh 0 1vh 5vh;
+    background-color: #afafaf9d;
+    z-index: 1;
+    top: 0;
+    position: sticky;
+    position: -webkit-sticky;
+}
+
+.navibar li {
+    float: left;
+}
+
+.navibar a {
+    display: block;
+    padding: 1vh 1vw;
+    text-decoration: none;
+    font-family: 'Montserrat', serif;
+    color: black;
+    background-color: none;
+    border-right: 1px solid grey;
+}
+
+.navibar span {
+    padding: 1vh 1.5vw;
+    transition: all ease-out 100ms;
+    background-color: none;
+    text-decoration: none;
+}
+
+.navibar span:hover {
+    color: white;
+    border-radius: 0.3vh;
+    background-color: rgba(255, 166, 0, 0.5);
+}
+
+#scolaire {
+    padding: 5vw;
+}
+
+.title {
+    font-family: 'Montserrat', serif;
+}
+
+.bi-circle {
+    position: relative;
+    right: 8px;
+}
+
+.timeline > div {
+    border-left: 1px solid black;
+    padding: 1vh 3vh 2vh;
+}
+
+#langages {
+    margin: 3vw;
+    padding: 2vw;
+    border: 1px solid black;
+    border-radius: 1vw;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+}

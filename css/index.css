@@ -13,6 +13,7 @@ body {
 
 .static-background {
     display: block;
+    background-color: black;
     background-image: url("https://neovia.studio/wp-content/uploads/2021/04/NeoviaHome2.webp");
     background-position: center top;
     background-repeat: no-repeat;
@@ -41,14 +42,22 @@ body {
     margin: 0;
 }
 
-.static-background img {
-    display: block;
-    position: relative;
-    top: 15%;
-    height: 40vh;
-    margin: 0 auto 0 auto;
-    border-radius: 100%;
-    border: solid 8px rgb(255, 255, 255);
+@media only screen and (max-width: 590px) {
+    .static-background img {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 590px) {
+    .static-background img {
+        display: block;
+        position: relative;
+        top: 15%;
+        height: 40vh;
+        margin: 0 auto 0 auto;
+        border-radius: 100%;
+        border: solid 8px rgb(255, 255, 255);
+    }
 }
 
 .static-background a {
@@ -86,12 +95,27 @@ body {
 
 .navibar a {
     display: block;
-    padding: 1vh 3vw;
+    padding: 1vh 1vw;
     text-decoration: none;
     font-family: 'Montserrat', serif;
     color: black;
+    background-color: none;
     border-right: 1px solid grey;
 }
+
+.navibar span {
+    padding: 1vh 1.5vw;
+    transition: all ease-out 100ms;
+    background-color: none;
+}
+
+.navibar span:hover {
+    color: white;
+    border-radius: 0.3vh;
+    background-color: rgba(255, 166, 0, 0.5);
+}
+
+
 
 .progress-bars {
     display: flex;
@@ -125,6 +149,13 @@ body {
 
 .projects {
     margin: 30px 120px;
+    transform: box-shadow ease-out 800ms;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    
+}
+
+.projects:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
 
 .projects img {
@@ -134,7 +165,7 @@ body {
 }
 
 .inspirations {
-    margin: 50px 5vw;
+    margin: 50px 1vw;
     border: #595959 1px solid;
     border-radius: 5px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
@@ -143,7 +174,7 @@ body {
 .inspirations > div {
     display: flex;
     justify-content: space-around;
-    margin: 0 10vw 50px 10vw;
+    margin: 0 1vw 50px 1vw;
 }
 
 .inspirations p {
