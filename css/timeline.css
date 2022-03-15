@@ -12,7 +12,7 @@ body {
 }
 
 
-.static-background {
+#header {
     display: block;
     background-color: black;
     background-image: url("https://neovia.studio/wp-content/uploads/2021/04/NeoviaHome2.webp");
@@ -24,7 +24,7 @@ body {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
 }
 
-.static-background h1 {
+#header h1 {
     margin: 0;
     padding: 0;
     text-align: center;
@@ -36,7 +36,7 @@ body {
     font-weight: normal;
 }
 
-.navibar {
+#navibar {
     display: inline-block;
     width: 100%;
     list-style-type: none;
@@ -49,11 +49,11 @@ body {
     position: -webkit-sticky;
 }
 
-.navibar li {
+#navibar li {
     float: left;
 }
 
-.navibar a {
+#navibar a {
     display: block;
     padding: 1vh 1vw;
     text-decoration: none;
@@ -63,14 +63,14 @@ body {
     border-right: 1px solid grey;
 }
 
-.navibar span {
+#navibar span {
     padding: 1vh 1.5vw;
     transition: all ease-out 100ms;
     background-color: none;
     text-decoration: none;
 }
 
-.navibar span:hover {
+#navibar span:hover {
     color: white;
     border-radius: 0.3vh;
     background-color: rgba(255, 166, 0, 0.5);
@@ -100,4 +100,37 @@ body {
     border: 1px solid black;
     border-radius: 1vw;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+#langages h5 {
+    font-weight: bolder;
+}
+
+#langages div {
+    font-family: 'Raleway', serif;
+}
+
+.contact-infos {
+    display: block;
+    color: #fff;
+    text-align: center;
+    background-image: url("https://neovia.studio/wp-content/uploads/2021/04/NeoviaHome2.webp");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    padding: 5vh 0 5vh 0;
+}
+
+.contact-infos h2 {
+    margin: auto;
+    padding: 0;
+    font-family: 'Montserrat', serif;  
+    display: inline-block;
+}
+
+.contact-infos div {
+    padding: 2vh 20vh 0 20vh;
+    display: flex;
+    justify-content: space-around;
 }

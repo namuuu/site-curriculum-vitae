@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,76 +10,68 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <!-- Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bebas Neue">
 
     <title>Leevan DAVID</title>
 
-    <script>
-        function copyEmail() {
-            var email = "leevan.david@gmail.com";
-            var emailButton = document.getElementById('email-button');
-            var copyConfirm = "Copié !";
-            var initialText = " Email ";
-
-            navigator.clipboard.writeText(email);
-
-            emailButton.innerHTML = copyConfirm;
-
-            var temp = setInterval( function() {
-                emailButton.innerHTML = initialText;
-                clearInterval(temp);
-            }, 600);
-
-        }
-    </script>
+    <script src="scripts/index.js"></script>
 </head>
 <body>
-
-    <div class="static-background" id="static-background">
+  <!-- Header: Static Background-->
+    <div class="header" id="header">
         <h1>Leevan DAVID</h1>
         <p>Première année à l'Institut de Génie Informatique et Industriel</p>
         <img src="img/photo.jpg" alt="Photo personnelle">
-        <a class="btn btn-outline-light" href="files/CV Leevan DAVID.pdf" download="CV Leevan DAVID"> <i class="bi bi-download"></i> Télécharger le CV </a>
+        <a class="btn btn-outline-light" href="files/CV_Leevan_DAVID.pdf" download="CV Leevan DAVID" style="cursor: pointer;"> <i class="bi bi-download"></i> Télécharger le CV </a>
     </div>
 
     <div class="who-am-i">
         <h2>Qui suis-je ?</h2>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tincidunt nibh lacus, sed tincidunt diam pretium a. Nam efficitur elit et ex vehicula posuere. Aliquam sit amet massa commodo, auctor dolor in, eleifend dolor. Duis lorem nunc, vehicula sed ultricies vel, consequat vel ante. Pellentesque dui nisi, ultricies vel blandit non, lacinia non nisi. Nam efficitur eu metus eu rhoncus. Curabitur arcu arcu, ultrices sit amet tempus ut, consequat vel ipsum. Donec congue orci ac tellus placerat, vel interdum odio pharetra. Vivamus id orci scelerisque, consequat odio eget, auctor quam. Suspendisse porta orci non urna aliquam, et cursus mi malesuada. Proin mi felis, auctor vel diam eget, auctor feugiat ipsum. Suspendisse turpis libero, scelerisque eu efficitur vel, ullamcorper sit amet nibh. Morbi cursus arcu nec condimentum sodales. Aenean eleifend sed odio imperdiet fringilla. Praesent est dolor, pretium sollicitudin turpis mollis, imperdiet lacinia sem.
+        Je suis un jeune passionné d'informatique depuis tout petit. Ce que j'y apprécie le plus, c'est la liberté dans la pensée 
+        et les possibilités que ce domaine offre, puisqu'avec suffisament de moyens, la limite de ce que l'on peut créer devient
+        de plus en plus difficile à atteindre. J'adore également comprendre le fonctionnement des applications, des sites, des jeux... 
+        Comprendre leur systèmes, avoir la clairvoyance sur les différents mécanismes utilisés. 
+        <br>
+        Je n'ai cependant pas de réels buts en terme dans ce domaine, tant vaste il est. Tout ce que j'aimerais, c'est pouvoir 
+        apprendre: que ce soit sur un langage ou un autre, en équipe ou en individuel, sur des nouveautés ou des bugs, 
+        se poser pour réfléchir à comment je vais m'attaquer à un défi informatique est d'une manière ou d'une autre, 
+        ma passion.
     </div>
 
-    <ul class="navibar">
-        <li><a href="#static-background"><span> Page principale </span></a></li>
-        <li><a href=""><span> Mes projets </span></a></li>
+    <ul id="navibar">
+        <li><a href="#header"><span> Page principale </span></a></li>
+        <li><a href="#projects"><span> Mes projets </span></a></li>
         <li><a href="/timeline.html"><span> Mon apprentissage </span></a></li>
         <li></li>
     </ul>
 
-    <div class="progress-bars">
+    <div id="progress-bars">
         <h2>Ma maîtrise des langages : </h2>   
-        <span>Java :</span>
+        <span> Java : </span>
         <div class="progress" style="height: 4vh">
-            <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" role="progress-bar" style="width: 90%" aria-valuemin="0" aria-valuenow="75" aria-valuemax="100"> 90% </div>
+            <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" style="width: 90%"> 90% </div>
         </div>
-        <span>HTML :</span>
+        <span> HTML : </span>
         <div class="progress" style="height: 4vh">
-            <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated" role="progress-bar" style="width: 65%" aria-valuemin="0" aria-valuenow="75" aria-valuemax="100"> 65% </div>
+            <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated"  style="width: 65%"> 65% </div>
         </div>
-        <span>JavaScript :</span>
+        <span> JavaScript : </span>
         <div class="progress" style="height: 4vh">
-            <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" role="progress-bar" style="width: 55%" aria-valuemin="0" aria-valuenow="75" aria-valuemax="100"> 55% </div>
+            <div class="progress-bar bg-success progress-bar-striped progress-bar-animated"  style="width: 55%"> 55% </div>
         </div>
-        <span>C Sharp :</span>
+        <span> C Sharp : </span>
         <div class="progress" style="height: 4vh">
-            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progress-bar" style="width: 55%" aria-valuemin="0" aria-valuenow="75" aria-valuemax="100"> 55% </div>
+            <div class="progress-bar progress-bar-striped progress-bar-animated"  style="width: 55%"> 55% </div>
         </div>
     </div>
     
 
-    <h2 style="text-align: center; font-family: 'Montserrat', serif; padding: 70px 0 20px 0;">Différents projets</h2>
+    <h2 id="projects" style="text-align: center; font-family: 'Montserrat', serif; padding: 70px 0 20px 0;">Différents projets</h2>
     
-    <div class="projects card mb-3">
+    <div class="card mb-3">
         <div class="row g-0">
           <div class="col-md-5">
-            <img src="img/saeno's peak cover.png" class="img-fluid rounded-start" alt="saeno's peak cover">
+            <img src="img/saeno's_peak_cover.png" class="img-fluid rounded-start" alt="saeno's_peak_cover">
           </div>
           <div class="col-md-7">
             <div class="card-body">
@@ -95,7 +87,7 @@
         </div>
       </div>
 
-    <div class="projects card mb-3">
+    <div class="card mb-3">
         <div class="row g-0">
             <div class="col-md-7">
                 <div class="card-body">
@@ -109,15 +101,15 @@
                 </div>
               </div>
             <div class="col-md-5">
-                <img src="img/avalam-cover.jpeg" class="img-fluid rounded-start" alt="saeno's peak cover">
+                <img src="img/avalam-cover.jpeg" class="img-fluid rounded-start" alt="avalambot-cover">
             </div>
         </div>
     </div>
 
-    <div class="projects card mb-3">
+    <div class="card mb-3">
         <div class="row g-0">
           <div class="col-md-5">
-            <img src="https://miro.medium.com/max/1400/1*orRINLOu4Lgdx-ZUyH6J7Q.png" class="img-fluid rounded-start" alt="saeno's peak cover">
+            <img src="https://miro.medium.com/max/1400/1*orRINLOu4Lgdx-ZUyH6J7Q.png" class="img-fluid rounded-start" alt="discordbot-cover">
           </div>
           <div class="col-md-7">
             <div class="card-body">
@@ -162,7 +154,7 @@
             </div>
 
             <div class="card portrait" style="width: 18rem; display: inline-flex;">
-                <img src="img/portrait-toby.jfif" class="card-img-top" alt="DaniDev">
+                <img src="img/portrait-toby.jfif" class="card-img-top" alt="TobyFox">
                 <div class="card-body">
                     <h5 class="card-title">Robert "Toby Fox" Fox</h5>
                         <p class="card-text">
@@ -176,12 +168,69 @@
 
     </div>
 
+    <div id="learning">
+        <h2> La spécificité de mon apprentissage </h2>
+        <div class="card mb-3">
+            <div class="row g-0">
+              <div class="col-md-5">
+                <img src="https://resources.jetbrains.com/storage/products/intellij-idea/img/meta/preview.png" class="img-fluid rounded-start" alt="selflearning-cover">
+              </div>
+              <div class="col-md-7">
+                <div class="card-body">
+                  <h5 class="card-title">Apprentissage par le code lui-même</h5>
+                  <p class="card-text">
+                      Généralement, quand on veut apprendre le développement informatique depuis 0 de manière autodidacte
+                      notre premier réflexe est de regarder une documentation, ou un tutoriel sur internet... Ce qui n'a pas 
+                      été mon cas, car ce n'est pas une manière qui me plaisait. Au contraire, je trouvais que cela 
+                      allait trop peu dans des utilisations effectives, ou était trop lent à mon goût, c'est pour cette 
+                      raison que j'ai tout simplement ouvert un logiciel, et ait regardé sa structure pour comprendre le 
+                      code du mieux que je pouvais. Bien que cette manière est très chaotique... celle-ci a plutôt bien 
+                      marché, au final !
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-3">
+            <div class="row g-0">
+                <div class="col-md-7">
+                    <div class="card-body">
+                      <h5 class="card-title"> Le Speedrunning </h5>
+                      <p class="card-text">
+                          Un autre facteur qui m'avait donné l'envie d'insérer le développement informatique dans mon quotidien, 
+                          est le Speedrunning. C'est une pratique qui cherche à terminer un jeu, de la manière la plus rapide,
+                          et tout est autorisé. Cela signifie donc que rechercher dans le code chaque mécanique pour tenter 
+                          de l'exploiter afin de sauver quelques secondes. Cela ne pourrait pas paraître dense à première vue, 
+                          mais cela peut devenir bien plus intéressant qu'il n'y parait. Un de mes exemples préférés est
+                          <a href="https://www.youtube.com/watch?v=1hs451PfFzQ" target="_blank">celui-ci</a> puisque celui-ci 
+                          requiert des connaissances à la fois du fonctionnement du jeu, des mathématiques ainsi que de la 
+                          programmation.
+                      </p>
+                    </div>
+                  </div>
+                <div class="col-md-5">
+                    <img src="http://s3.amazonaws.com/zeldaspeedruns/app/public/system/images/821/original/4.jpg?1406610833" class="img-fluid rounded-start" alt="speedrunning-cover">
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="contact-infos">
         <h2>Informations de contact</h2>
         <div>
-            <a class="btn btn-outline-light" href="https://github.com/namuuu"> <i class="bi bi-github"></i> Github </a>
-            <a class="btn btn-outline-light" href="files/CV Leevan DAVID.pdf" download="CV Leevan DAVID"> <i class="bi bi-download"></i> Télécharger le CV </a>
-            <a class="btn btn-outline-light" id="email-button" onclick="copyEmail()"> <i class="bi bi-at"></i> Email </a>
+            <a class="btn btn-outline-light" href="https://github.com/namuuu" style="cursor: pointer;"> 
+              <i class="bi bi-github"></i> Github 
+            </a>
+            <a class="btn btn-outline-light" href="files/CV_Leevan_DAVID.pdf" download="CV Leevan DAVID" style="cursor: pointer;"> 
+              <i class="bi bi-download"></i> Télécharger le CV 
+            </a>
+            <a class="btn btn-outline-light" id="email-button" style="cursor: pointer;" onclick="copyText(this, 'leevan.david@gmail.com')"> 
+              <i class="bi bi-at"></i> Email 
+            </a>
+            <a class="btn btn-outline-light" style="cursor: pointer;" href="https://www.linkedin.com/in/leevan-david-9aa675234/"> 
+              <i class="bi bi-linkedin"></i> Linkedin 
+            </a>
         </div>
     </div>
     
